@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PROTOCOLO LAZARUS</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="has-background-black">
+        <div class="scanlines"></div>
+
+        <header class="game-title has-text-centered py-4">
+            <h1 class="title is-2 is-family-monospace has-text-danger">
+                PROTOCOLO LAZARUS
+            </h1>
+            <p class="subtitle is-6 has-text-grey">v1.0.6-STABLE</p>
+        </header>
+
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-two-thirds">
+                            <div id="game-box" class="terminal-box">
+                                <header class="terminal-header">
+                                    <span class="status-dot"></span>
+                                    <span
+                                        class="is-family-monospace has-text-black"
+                                        >root@santiago:~# status_check</span
+                                    >
+                                </header>
+                                <div class="terminal-content">
+                                    <p
+                                        id="scene-text"
+                                        class="is-size-5 is-family-monospace mb-5"
+                                    ></p>
+                                    <div
+                                        id="inventory-bar"
+                                        class="tags mb-5"
+                                    ></div>
+                                    <div
+                                        id="options-container"
+                                        class="buttons"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-fixed has-text-centered py-3">
+            <p class="is-family-monospace">
+                Desarrollado por
+                <a
+                    href="https://github.com/santiagourdaneta"
+                    target="_blank"
+                    class="has-text-danger"
+                >
+                    https://github.com/santiagourdaneta
+                </a>
+            </p>
+        </footer>
+
+        <script src="js/model.js"></script>
+        <script src="js/controller.js"></script>
+    </body>
+</html>

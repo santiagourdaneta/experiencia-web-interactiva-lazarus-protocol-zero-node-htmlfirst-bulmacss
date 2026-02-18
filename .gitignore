@@ -1,0 +1,7 @@
+# Binarios de Go
+horror_server
+*.exe
+*.bin
+
+# Archivos de sistema
+.DS_Store
